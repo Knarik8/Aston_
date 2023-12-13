@@ -1,3 +1,5 @@
+package Collection;
+
 import java.util.Collection;
 
 
@@ -179,21 +181,6 @@ public class GenericLinkedList<T> {
             first = next;
         }
         head = null;
-    }
-
-    public GenericLinkedList<T> subList(int fromIndex, int toIndex) {
-        if (fromIndex < 0 || toIndex > size()) {
-            throw new IndexOutOfBoundsException("Wrong index");
-        }
-        GenericLinkedList<T> sublist = new GenericLinkedList<>();
-        int start = fromIndex;
-        while (start != toIndex) {
-            Node<T> headNode = findNodeByIndex(start);
-            sublist.add(headNode.value);
-            start++;
-        }
-        sublist.print();
-        return sublist;
     }
 
 

@@ -1,3 +1,5 @@
+package Collection;
+
 public class Node<T> {
     T value;
     Node<T> nextNode; //reference for next node

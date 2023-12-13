@@ -1,3 +1,5 @@
+package Collection;
+
 class BubbleSort {
 
     public static int[] bubbleSort(int[] array) {

@@ -1,3 +1,5 @@
+package Collection;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
@@ -155,7 +157,7 @@ public class GenericDynamicArray<T> {
 
         //subList() -> returns a portion of the arraylist
         public <T> GenericDynamicArray<T> subList(int startIndex, int endIndex) {
-            GenericDynamicArray<T> subList = new GenericDynamicArray<>(endIndex - startIndex);
+            GenericDynamicArray<T> subList = new GenericDynamicArray<T>(endIndex - startIndex);
             for (int i = startIndex; i < endIndex; i++) {
                 subList.add((T) array[i]);
             }
